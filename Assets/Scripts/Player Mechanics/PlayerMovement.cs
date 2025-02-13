@@ -17,8 +17,12 @@ public class PlayerMovement : MonoBehaviour
         _rigidbody=GetComponent<Rigidbody>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
+        //I genuiely have no idea what is going on here
+        //Everything else in the game works for the most part apart this so you need to fix the movement before playing
+        //apart if you think the drunk movement is a good feature (If ends up actually working which is one chance out
+        //of two
         Debug.Log(_inputs.Move);
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);

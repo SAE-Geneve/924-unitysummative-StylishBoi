@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
 
     public void BoxCollected()
     {
+        //Updates the score
         totalboxes++;
         totalText.text=("Boxes Collected - "+totalboxes);
     }

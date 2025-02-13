@@ -15,9 +15,9 @@ public class Box : MonoBehaviour
         _rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
+        //Makes the box and stops when time limit is over
         if (timeMoving < timeLimit)
         {
             timeMoving +=Time.deltaTime;
