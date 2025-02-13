@@ -11,19 +11,12 @@ public class BoxCatcher : MonoBehaviour
     private Box _catchedBox;
     private Rigidbody _catchedBoxRb;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
-    {
-        // if (_catchedBox != null && _catchedBox.TryGetComponent(out Rigidbody _rigidbody))
-        // {
-        //     _rigidbody.position = catchPoint.position;
-        // }
+    { 
+        if (_catchedBox != null && _catchedBox.TryGetComponent(out Rigidbody _rigidbody))
+        {
+            _rigidbody.position = catchPoint.position;
+        }
     }
 
     public void InputCatch(InputAction.CallbackContext context)
